@@ -1,10 +1,14 @@
-@use 'wars';
+// @use 'wars';
 @use 'normalize';
 @use 'header';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kumbh+Sans:wght@400;700&family=PT+Serif:wght@700&display=swap');
+@import 'wars';
 
-@font-face {
-  font-family: 'suprema';
-  src: url('../fonts/suprema.woff') format('woff'), url('../fonts/suprema.woff2') format('woff2');
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $textColor;
 }
 
 .container {
