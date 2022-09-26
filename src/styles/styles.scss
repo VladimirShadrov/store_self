@@ -1,0 +1,14 @@
+@use 'wars';
+@use 'normalize';
+@use 'header';
+
+@font-face {
+  font-family: 'suprema';
+  src: url('../fonts/suprema.woff') format('woff'), url('../fonts/suprema.woff2') format('woff2');
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+}

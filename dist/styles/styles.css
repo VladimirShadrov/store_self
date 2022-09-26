@@ -1,0 +1,9 @@
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/sass-loader/dist/cjs.js!./styles/styles.scss ***!
+  \**************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "suprema";
+  src: url(../fonts//suprema.woff) format("woff"), url(../fonts//suprema.woff2) format("woff2");
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGVzL3N0eWxlcy5jc3MiLCJtYXBwaW5ncyI6Ijs7O0FBRUE7RUFDRTtFQUNBO0FBREYsQyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3N0eWxlcy9zdHlsZXMuc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBAdXNlICd3YXJzJztcclxuLy8gQHVzZSAncHBwJztcclxuQGZvbnQtZmFjZSB7XHJcbiAgZm9udC1mYW1pbHk6ICdzdXByZW1hJztcclxuICBzcmM6IHVybCgnLi4vZm9udHMvc3VwcmVtYS53b2ZmJykgZm9ybWF0KCd3b2ZmJyksIHVybCgnLi4vZm9udHMvc3VwcmVtYS53b2ZmMicpIGZvcm1hdCgnd29mZjInKTtcclxufVxyXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/
