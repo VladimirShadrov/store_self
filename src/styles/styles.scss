@@ -1,14 +1,26 @@
 // @use 'wars';
 @use 'normalize';
 @use 'header';
+@use 'content';
+@use 'catalog';
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kumbh+Sans:wght@400;700&family=PT+Serif:wght@700&display=swap');
 @import 'wars';
+@import 'buttons';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: $textColor;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {

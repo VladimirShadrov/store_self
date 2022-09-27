@@ -1,0 +1,59 @@
+@import 'wars';
+
+.catalog {
+  &__title-wrapper {
+    padding: 30px 0;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 50px;
+    color: $titleColor;
+  }
+
+  &__card-wrapper {
+    padding: 30px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__card {
+    width: calc(33.33% - 30px);
+    margin: 15px;
+  }
+
+  &__card-image {
+    display: block;
+    width: 100%;
+  }
+
+  &__card-title {
+    margin: 16px 0;
+    color: $titleColor;
+  }
+
+  &__card-parametr {
+    color: $lightGreyTextColor;
+    font-size: 14px;
+    line-height: 22px;
+
+    & > span {
+      color: $textColor;
+    }
+  }
+
+  &__card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  &__card-price {
+    color: $titleColor;
+    font-weight: bold;
+  }
+}
