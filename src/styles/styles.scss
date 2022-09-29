@@ -3,9 +3,9 @@
 @use 'header';
 @use 'content';
 @use 'catalog';
+@use 'buttons';
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kumbh+Sans:wght@400;700&family=PT+Serif:wght@700&display=swap');
 @import 'wars';
-@import 'buttons';
 
 * {
   margin: 0;
@@ -27,4 +27,10 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 14px;
+  }
 }

@@ -1,12 +1,21 @@
 @import 'wars';
 
 .header {
-  background: $headerBg;
-  padding: 15px 0;
   font-size: 16px;
   line-height: 22px;
 
-  &__wrapper {
+  &__wrapper-desc {
+    padding: 16px 0;
+    background: $headerBg;
+  }
+
+  &__wrapper-mobile {
+    padding: 12px 0;
+    display: none;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__desctop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +63,8 @@
     color: rgba(255, 255, 255, 1);
   }
 
-  &__filter {
+  &__filter,
+  &__filter-mobile {
     border: 1px solid $borderColor;
     border-radius: 60px;
     display: flex;
@@ -63,6 +73,10 @@
     width: 100%;
     max-width: 400px;
     overflow: hidden;
+  }
+
+  &__filter-mobile {
+    max-width: 100%;
   }
 
   &__field {
@@ -102,6 +116,18 @@
   &__logo-text,
   &__logo-link {
     pointer-events: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    &__filter {
+      display: none;
+    }
+
+    &__wrapper-mobile {
+      display: block;
+    }
   }
 }
 

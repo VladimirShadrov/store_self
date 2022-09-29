@@ -1,1 +1,28 @@
 @import 'wars';
+
+.button {
+  width: 130px;
+  height: 40px;
+  color: $btnColor;
+  padding: 10px 15px 10px 40px;
+  font-size: 14px;
+  line-height: 20px;
+  transition: 0.3s;
+  background: $btnBgColor;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  position: relative;
+  display: block;
+
+  &:hover {
+    background: $btnBgHoverColor;
+  }
+
+  &__icon {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 15px;
+  }
+}
