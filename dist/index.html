@@ -1,10 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Витрина</title>
-  <script defer src="bundle.js"></script><link href="styles/styles.css" rel="stylesheet"></head>
-  <body></body>
-</html>
+<head><script defer src="bundle.js"></script><link href="styles/styles.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ../node_modules/html-webpack-plugin/lib/loader.js):
+  SyntaxError: Unexpected token '.'
+      at Function (<anonymous>)
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:14942:16
+      at apply (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:487:27)
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:15326:16
+      at apply (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:489:27)
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:6627:16
+      at Function.template (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:14941:20)
+      at Object.module.exports (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\html-webpack-plugin\lib\loader.js:32:22)
+  ModuleBuildError: Module build failed (from ../node_modules/html-webpack-plugin/lib/loader.js):
+  SyntaxError: Unexpected token '.'
+      at Function (<anonymous>)
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:14942:16
+      at apply (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:487:27)
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:15326:16
+      at apply (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:489:27)
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:6627:16
+      at Function.template (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\lodash\lodash.js:14941:20)
+      at Object.module.exports (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\html-webpack-plugin\lib\loader.js:32:22)
+      at processResult (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\webpack\lib\NormalModule.js:758:19)
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\webpack\lib\NormalModule.js:860:5
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\loader-runner\lib\LoaderRunner.js:400:11
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\loader-runner\lib\LoaderRunner.js:252:18
+      at runSyncOrAsync (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\loader-runner\lib\LoaderRunner.js:156:3)
+      at iterateNormalLoaders (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\loader-runner\lib\LoaderRunner.js:251:2)
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\loader-runner\lib\LoaderRunner.js:224:4
+      at D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\webpack\lib\NormalModule.js:834:15
+      at Array.eval (eval at create (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:12:1)
+      at runCallbacks (D:\Вёрстка\Портфолио\Витрина (Октябрь 2022)\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:27:15)
+  
+  - Function
+  
+  - lodash.js:14942 
+    [Витрина (Октябрь 2022)]/[lodash]/lodash.js:14942:16
+  
+  
+  - lodash.js:15326 
+    [Витрина (Октябрь 2022)]/[lodash]/lodash.js:15326:16
+  
+  
+  - lodash.js:6627 
+    [Витрина (Октябрь 2022)]/[lodash]/lodash.js:6627:16
+  
+  
+  
+  - ModuleBuildError: Module build failed (from ../node_modules/html-webpack-plugin/lib/loader.js):
+  
+  - SyntaxError: Unexpected token '.'
+  
+  - Function
+  
+  - lodash.js:14942 
+    [Витрина (Октябрь 2022)]/[lodash]/lodash.js:14942:16
+  
+  
+  - lodash.js:15326 
+    [Витрина (Октябрь 2022)]/[lodash]/lodash.js:15326:16
+  
+  
+  - lodash.js:6627 
+    [Витрина (Октябрь 2022)]/[lodash]/lodash.js:6627:16
+  
+  
+  
+  
+  - NormalModule.js:860 
+    [Витрина (Октябрь 2022)]/[webpack]/lib/NormalModule.js:860:5
+  
+  - LoaderRunner.js:400 
+    [Витрина (Октябрь 2022)]/[loader-runner]/lib/LoaderRunner.js:400:11
+  
+  - LoaderRunner.js:252 
+    [Витрина (Октябрь 2022)]/[loader-runner]/lib/LoaderRunner.js:252:18
+  
+  
+  
+  - LoaderRunner.js:224 
+    [Витрина (Октябрь 2022)]/[loader-runner]/lib/LoaderRunner.js:224:4
+  
+  - NormalModule.js:834 
+    [Витрина (Октябрь 2022)]/[webpack]/lib/NormalModule.js:834:15
+  
+  
+  
+  - child-compiler.js:169 
+    [Витрина (Октябрь 2022)]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  
+  - Compiler.js:577 
+    [Витрина (Октябрь 2022)]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1196 
+    [Витрина (Октябрь 2022)]/[webpack]/lib/Compiler.js:1196:17
+  
+  
+  
+  - Compiler.js:1192 
+    [Витрина (Октябрь 2022)]/[webpack]/lib/Compiler.js:1192:33
+  
+  
+  - Compilation.js:3092 
+    [Витрина (Октябрь 2022)]/[webpack]/lib/Compilation.js:3092:11
+  
+  
+</pre>

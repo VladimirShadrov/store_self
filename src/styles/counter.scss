@@ -1,0 +1,25 @@
+@import 'wars';
+
+.counter {
+  margin-right: 16px;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+  padding: 7px;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__button {
+    color: $counterBtnColor;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+}

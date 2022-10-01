@@ -1,0 +1,247 @@
+@import 'wars';
+
+.basket {
+  padding-bottom: 30px;
+
+  &__title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__right-bar {
+    width: calc(80% - 20px);
+    margin-right: 20px;
+  }
+
+  &__table {
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+  }
+
+  &__table-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__clear {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: $counterBtnColor;
+    transition: 0.3s;
+
+    &:hover {
+      color: $titleHoverColor;
+    }
+  }
+
+  &__table-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 20px;
+    border-bottom: 1px solid $borderColor;
+    transition: 0.3s;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      & > .basket__table-row-options > .basket__table-row-description > .basket__product-name {
+        color: $titleHoverColor;
+      }
+
+      & > .basket__table-row-options > .basket__table-row-controls > .basket__table-row-delete > .basket__table-row-delete-button > svg > path {
+        stroke: $titleHoverColor;
+        transition: 0.3s;
+      }
+      & > .basket__table-row-options > .basket__table-row-controls > .basket__table-row-delete > .basket__table-row-delete-button > svg > rect {
+        stroke: $titleHoverColor;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &__table-image-wrapper {
+    width: 15%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 16px;
+  }
+
+  &__table-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__table-row-options {
+    display: flex;
+    width: 85%;
+  }
+
+  &__table-row-description {
+    width: 55%;
+    padding-right: 16px;
+  }
+
+  &__product-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  &__product-art {
+    color: $lightGreyTextColor;
+  }
+
+  &__table-row-controls {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8px;
+  }
+
+  &__table-row-price {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  &__table-row-delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__left-bar {
+    width: 30%;
+    padding: 15px 20px;
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+  }
+
+  &__order-row {
+    margin-bottom: 8px;
+  }
+
+  &__order-total-item,
+  &__order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__order-total-item {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+
+  &__order-item-value {
+    font-weight: bold;
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px 0;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: $orderBtnBg;
+    color: $btnColor;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background: $orderBtnHoverBg;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .basket__table-row-options {
+    flex-wrap: wrap;
+  }
+
+  .basket__table-row-description {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .basket__table-row-controls {
+    margin-left: 0;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 850px) {
+  .basket__content-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .basket__right-bar,
+  .basket__left-bar {
+    width: 100%;
+  }
+
+  .basket__right-bar {
+    margin-right: 0;
+  }
+
+  .basket__left-bar {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  //   .basket__table-row-controls {
+  //     margin-left: 0;
+  //     margin-top: 16px;
+  //     width: 100%;
+  //   }
+
+  .basket__table,
+  .basket__table-row-price,
+  .basket__left-bar {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .basket__order-total-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .basket__table-head,
+  .basket__table-row {
+    padding: 10px 10px;
+  }
+
+  .basket__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

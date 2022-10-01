@@ -1,0 +1,109 @@
+@import 'wars';
+
+.catalog {
+  &__title-wrapper {
+    padding: 30px 0;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 50px;
+    color: $titleColor;
+  }
+
+  &__card-wrapper {
+    padding: 30px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__card {
+    width: calc(33.33% - 30px);
+    margin: 15px;
+    padding: 16px;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.12), 0 4px 30px rgba(19, 15, 38, 0.1);
+      border-radius: 6px;
+    }
+  }
+
+  &__card-image-wrapper {
+    cursor: pointer;
+  }
+
+  &__card-image {
+    display: block;
+    width: 100%;
+  }
+
+  &__card-title {
+    margin: 16px 0;
+    color: $titleColor;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: $titleHoverColor;
+    }
+  }
+
+  &__card-parametr {
+    color: $lightGreyTextColor;
+    font-size: 14px;
+    line-height: 22px;
+
+    & > span {
+      color: $textColor;
+    }
+  }
+
+  &__card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  &__card-price {
+    color: $titleColor;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 950px) {
+  .catalog {
+    &__card {
+      width: calc(50% - 30px);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .catalog {
+    &__card {
+      width: calc(100% - 20px);
+      margin: 10px;
+      padding: 12px;
+    }
+
+    &__card-title,
+    &__card-price {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__title-wrapper {
+      padding: 20px 0;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
