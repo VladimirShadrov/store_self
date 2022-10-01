@@ -39,11 +39,16 @@
     background: transparent;
     cursor: pointer;
     color: $counterBtnColor;
+    transition: 0.3s;
+
+    &:hover {
+      color: $titleHoverColor;
+    }
   }
 
   &__table-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 15px 20px;
     border-bottom: 1px solid $borderColor;
     transition: 0.3s;
@@ -53,15 +58,15 @@
     }
 
     &:hover {
-      & > .basket__table-row-description > .basket__product-name {
+      & > .basket__table-row-options > .basket__table-row-description > .basket__product-name {
         color: $titleHoverColor;
       }
 
-      & > .basket__table-row-controls > .basket__table-row-delete > .basket__table-row-delete-button > svg > path {
+      & > .basket__table-row-options > .basket__table-row-controls > .basket__table-row-delete > .basket__table-row-delete-button > svg > path {
         stroke: $titleHoverColor;
         transition: 0.3s;
       }
-      & > .basket__table-row-controls > .basket__table-row-delete > .basket__table-row-delete-button > svg > rect {
+      & > .basket__table-row-options > .basket__table-row-controls > .basket__table-row-delete > .basket__table-row-delete-button > svg > rect {
         stroke: $titleHoverColor;
         transition: 0.3s;
       }
@@ -81,8 +86,13 @@
     object-fit: cover;
   }
 
+  &__table-row-options {
+    display: flex;
+    width: 85%;
+  }
+
   &__table-row-description {
-    width: 50%;
+    width: 55%;
     padding-right: 16px;
   }
 
@@ -98,7 +108,7 @@
   }
 
   &__table-row-controls {
-    width: 35%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,5 +176,72 @@
     &:hover {
       background: $orderBtnHoverBg;
     }
+  }
+}
+
+@media (max-width: 1050px) {
+  .basket__table-row-options {
+    flex-wrap: wrap;
+  }
+
+  .basket__table-row-description {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .basket__table-row-controls {
+    margin-left: 0;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 850px) {
+  .basket__content-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .basket__right-bar,
+  .basket__left-bar {
+    width: 100%;
+  }
+
+  .basket__right-bar {
+    margin-right: 0;
+  }
+
+  .basket__left-bar {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  //   .basket__table-row-controls {
+  //     margin-left: 0;
+  //     margin-top: 16px;
+  //     width: 100%;
+  //   }
+
+  .basket__table,
+  .basket__table-row-price,
+  .basket__left-bar {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .basket__order-total-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .basket__table-head,
+  .basket__table-row {
+    padding: 10px 10px;
+  }
+
+  .basket__title {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
