@@ -75,24 +75,23 @@
                 <path d="M11.4883 11.4905L14.9993 15.0015" stroke="#7D818E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </button>
+          </div>
         </div>
-
       </div>
     </header>
     <!-- HEADER -->
 
-    
     <div class="content">
       <div class="container">
         <!-- КАТАЛОГ -->
-        <div class="catalog" style="display: none;">
+        <div class="catalog" style="display: none">
           <div class="catalog__title-wrapper">
             <h2 class="catalog__title">Экипировка для супергероя</h2>
           </div>
           <div class="catalog__card-wrapper">
             <div class="catalog__card">
               <div class="catalog__card-image-wrapper">
-                <img class="catalog__card-image" src="https://avatars.mds.yandex.net/i?id=e76670f6ec3c795a2d61f0711d65cb39-5484758-images-thumbs&n=13" alt="image" />
+                <img class="catalog__card-image" src="https://avatars.mds.yandex.net/i?id=e76670f6ec3c795a2d61f0711d65cb39-5484758-images-thumbs&n=13" alt="image" title="image" />
               </div>
               <div class="catalog__card-description">
                 <h4 class="catalog__card-title">Вертикальный велотренажер B37</h4>
@@ -115,7 +114,7 @@
                       <path d="M7.5 11.8801V13.7551M12.5 11.8801V13.7551" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    Купить
+                    <span class="button__text">Купить</span>
                   </button>
                 </div>
               </div>
@@ -146,7 +145,7 @@
                       <path d="M7.5 11.8801V13.7551M12.5 11.8801V13.7551" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    Купить
+                    <span class="button__text">Купить</span>
                   </button>
                 </div>
               </div>
@@ -176,7 +175,7 @@
                       <path d="M7.5 11.8801V13.7551M12.5 11.8801V13.7551" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    Купить
+                    <span class="button__text">Купить</span>
                   </button>
                 </div>
               </div>
@@ -206,7 +205,7 @@
                       <path d="M7.5 11.8801V13.7551M12.5 11.8801V13.7551" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    Купить
+                    <span class="button__text">Купить</span>
                   </button>
                 </div>
               </div>
@@ -236,7 +235,7 @@
                       <path d="M7.5 11.8801V13.7551M12.5 11.8801V13.7551" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    Купить
+                    <span class="button__text">Купить</span>
                   </button>
                 </div>
               </div>
@@ -266,7 +265,7 @@
                       <path d="M7.5 11.8801V13.7551M12.5 11.8801V13.7551" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    Купить
+                    <span class="button__text">Купить</span>
                   </button>
                 </div>
               </div>
@@ -277,19 +276,18 @@
         <!-- // КАТАЛОГ -->
 
         <!-- КАРТОЧКА ТОВАРА-->
-        <div class="product">
+        <div class="product" style="display: none">
           <div class="crumbs__wrapper">
             <a href="#" class="crumbs__item" data-id="main">Главная</a>
             <a href="#" class="crumbs__item crumbs__item-active" data-id="active">Название супергероя</a>
           </div>
           <div class="product__content">
-
             <div class="product__left-bar">
               <div class="product__image-wrapper">
-                <img class="product__image" src="https://w-dog.ru/wallpapers/14/2/405462699304734/oranzhevyj-ploshhad-cube-3d-kvadratnyj-apelsin-rendering.jpg" alt="image" title="super hero" >
+                <img class="product__image" src="https://w-dog.ru/wallpapers/14/2/405462699304734/oranzhevyj-ploshhad-cube-3d-kvadratnyj-apelsin-rendering.jpg" alt="image" title="super hero" />
               </div>
               <div class="product__description">
-                <p class="product__description-title">Описание: </p>
+                <p class="product__description-title">Описание:</p>
                 <p class="product__description-text">Описание товара: <span>Купается в лучах солнца</span></p>
                 <p class="product__description-text">Набор: <span>Входит в набор «Коварные охотники»</span></p>
                 <p class="product__description-text">Тип товара: <span>Экипировка</span></p>
@@ -309,14 +307,14 @@
                 <div class="counter">
                   <button class="counter__button" data-id="minus">
                     <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13 1H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13 1H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </button>
                   <span class="counter__value">25</span>
                   <button class="counter__button" data-id="plus">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 1V13" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M13 7H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 1V13" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13 7H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </button>
                 </div>
@@ -333,15 +331,254 @@
                     <path d="M7.5 11.8801V13.7551M12.5 11.8801V13.7551" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
 
-                  Купить
+                  <span class="button__text">Купить</span>
                 </button>
+              </div>
             </div>
-            </div>
-
           </div>
         </div>
         <!-- // КАРТОЧКА ТОВАРА-->
+        <div class="basket">
+          <div class="crumbs__wrapper">
+            <a href="#" class="crumbs__item" data-id="main">Главная</a>
+            <a href="#" class="crumbs__item crumbs__item-active" data-id="active">Корзина</a>
+          </div>
 
+          <div class="basket__content">
+            <h3 class="basket__title">Корзина</h3>
+            <div class="basket__content-wrapper">
+              <div class="basket__right-bar">
+                <div class="basket__table">
+                  <div class="basket__table-head">
+                    <p class="basket__table-head-title">Товары в корзине</p>
+                    <button class="basket__clear">Очистить корзину</button>
+                  </div>
+                  <div class="basket__table-row">
+                    <div class="basket__table-image-wrapper">
+                      <img class="basket__table-image" src="https://avatars.mds.yandex.net/i?id=e76670f6ec3c795a2d61f0711d65cb39-5484758-images-thumbs&n=13" alt="image" title="image" />
+                    </div>
+
+                    <div class="basket__table-row-description">
+                      <p class="basket__product-name">Букет из 15 белых роз 35-40 см (Кения) в стильной упаковке</p>
+                      <p class="basket__product-art">
+                        <span class="basket__product-art-title">Артикул: </span>
+                        <span class="basket__product-art-value"> 0092S40240</span>
+                      </p>
+                    </div>
+
+                    <div class="basket__table-row-controls">
+                      <div class="counter">
+                        <button class="counter__button" data-id="minus">
+                          <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 1H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                        <span class="counter__value">25</span>
+                        <button class="counter__button" data-id="plus">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 1V13" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13 7H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="basket__table-row-price">
+                        <span class="basket__table-row-price-value">5 060 </span>
+                        <span class="basket__table-row-price-currency">₽</span>
+                      </div>
+
+                      <div class="basket__table-row-delete">
+                        <button class="basket__table-row-delete-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M7.96086 14.6262C7.57034 15.0167 7.57034 15.6499 7.96086 16.0404C8.35139 16.431 8.98455 16.431 9.37508 16.0404L7.96086 14.6262ZM12.7084 12.7071C13.0989 12.3166 13.0989 11.6834 12.7084 11.2929C12.3179 10.9024 11.6847 10.9024 11.2942 11.2929L12.7084 12.7071ZM11.2942 11.2929C10.9037 11.6834 10.9037 12.3166 11.2942 12.7071C11.6847 13.0976 12.3179 13.0976 12.7084 12.7071L11.2942 11.2929ZM16.0417 9.37376C16.4323 8.98324 16.4323 8.35007 16.0417 7.95955C15.6512 7.56903 15.0181 7.56903 14.6275 7.95955L16.0417 9.37376ZM12.7084 11.2929C12.3179 10.9024 11.6847 10.9024 11.2942 11.2929C10.9037 11.6834 10.9037 12.3166 11.2942 12.7071L12.7084 11.2929ZM14.6275 16.0404C15.0181 16.431 15.6512 16.431 16.0417 16.0404C16.4323 15.6499 16.4323 15.0167 16.0417 14.6262L14.6275 16.0404ZM11.2942 12.7071C11.6847 13.0976 12.3179 13.0976 12.7084 12.7071C13.0989 12.3166 13.0989 11.6834 12.7084 11.2929L11.2942 12.7071ZM9.37508 7.95955C8.98455 7.56903 8.35139 7.56903 7.96086 7.95955C7.57034 8.35007 7.57034 8.98324 7.96086 9.37376L9.37508 7.95955ZM9.37508 16.0404L12.7084 12.7071L11.2942 11.2929L7.96086 14.6262L9.37508 16.0404ZM12.7084 12.7071L16.0417 9.37376L14.6275 7.95955L11.2942 11.2929L12.7084 12.7071ZM11.2942 12.7071L14.6275 16.0404L16.0417 14.6262L12.7084 11.2929L11.2942 12.7071ZM12.7084 11.2929L9.37508 7.95955L7.96086 9.37376L11.2942 12.7071L12.7084 11.2929Z"
+                              fill="#E2E4EB"
+                            />
+                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#E2E4EB" stroke-width="2" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  TEST ROW -->
+                  <div class="basket__table-row">
+                    <div class="basket__table-image-wrapper">
+                      <img src="https://avatars.mds.yandex.net/i?id=e76670f6ec3c795a2d61f0711d65cb39-5484758-images-thumbs&n=13" alt="image" title="image" class="basket__table-image" />
+                    </div>
+                    <div class="basket__table-row-description">
+                      <p class="basket__product-name">Букет из 15 белых роз 35-40 см (Кения) в стильной упаковке</p>
+                      <p class="basket__product-art">
+                        <span class="basket__product-art-title">Артикул: </span>
+                        <span class="basket__product-art-value"> 0092S40240</span>
+                      </p>
+                    </div>
+                    <div class="basket__table-row-controls">
+                      <div class="counter">
+                        <button class="counter__button" data-id="minus">
+                          <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 1H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                        <span class="counter__value">25</span>
+                        <button class="counter__button" data-id="plus">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 1V13" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13 7H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="basket__table-row-price">
+                        <span class="basket__table-row-price-value">5 060 </span>
+                        <span class="basket__table-row-price-currency">₽</span>
+                      </div>
+
+                      <div class="basket__table-row-delete">
+                        <button class="basket__table-row-delete-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M7.96086 14.6262C7.57034 15.0167 7.57034 15.6499 7.96086 16.0404C8.35139 16.431 8.98455 16.431 9.37508 16.0404L7.96086 14.6262ZM12.7084 12.7071C13.0989 12.3166 13.0989 11.6834 12.7084 11.2929C12.3179 10.9024 11.6847 10.9024 11.2942 11.2929L12.7084 12.7071ZM11.2942 11.2929C10.9037 11.6834 10.9037 12.3166 11.2942 12.7071C11.6847 13.0976 12.3179 13.0976 12.7084 12.7071L11.2942 11.2929ZM16.0417 9.37376C16.4323 8.98324 16.4323 8.35007 16.0417 7.95955C15.6512 7.56903 15.0181 7.56903 14.6275 7.95955L16.0417 9.37376ZM12.7084 11.2929C12.3179 10.9024 11.6847 10.9024 11.2942 11.2929C10.9037 11.6834 10.9037 12.3166 11.2942 12.7071L12.7084 11.2929ZM14.6275 16.0404C15.0181 16.431 15.6512 16.431 16.0417 16.0404C16.4323 15.6499 16.4323 15.0167 16.0417 14.6262L14.6275 16.0404ZM11.2942 12.7071C11.6847 13.0976 12.3179 13.0976 12.7084 12.7071C13.0989 12.3166 13.0989 11.6834 12.7084 11.2929L11.2942 12.7071ZM9.37508 7.95955C8.98455 7.56903 8.35139 7.56903 7.96086 7.95955C7.57034 8.35007 7.57034 8.98324 7.96086 9.37376L9.37508 7.95955ZM9.37508 16.0404L12.7084 12.7071L11.2942 11.2929L7.96086 14.6262L9.37508 16.0404ZM12.7084 12.7071L16.0417 9.37376L14.6275 7.95955L11.2942 11.2929L12.7084 12.7071ZM11.2942 12.7071L14.6275 16.0404L16.0417 14.6262L12.7084 11.2929L11.2942 12.7071ZM12.7084 11.2929L9.37508 7.95955L7.96086 9.37376L11.2942 12.7071L12.7084 11.2929Z"
+                              fill="#E2E4EB"
+                            />
+                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#E2E4EB" stroke-width="2" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__table-row">
+                    <div class="basket__table-image-wrapper">
+                      <img src="https://avatars.mds.yandex.net/i?id=e76670f6ec3c795a2d61f0711d65cb39-5484758-images-thumbs&n=13" alt="image" title="image" class="basket__table-image" />
+                    </div>
+                    <div class="basket__table-row-description">
+                      <p class="basket__product-name">Букет из 15 белых роз 35-40 см (Кения) в стильной упаковке</p>
+                      <p class="basket__product-art">
+                        <span class="basket__product-art-title">Артикул: </span>
+                        <span class="basket__product-art-value"> 0092S40240</span>
+                      </p>
+                    </div>
+                    <div class="basket__table-row-controls">
+                      <div class="counter">
+                        <button class="counter__button" data-id="minus">
+                          <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 1H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                        <span class="counter__value">25</span>
+                        <button class="counter__button" data-id="plus">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 1V13" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13 7H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="basket__table-row-price">
+                        <span class="basket__table-row-price-value">5 060 </span>
+                        <span class="basket__table-row-price-currency">₽</span>
+                      </div>
+
+                      <div class="basket__table-row-delete">
+                        <button class="basket__table-row-delete-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M7.96086 14.6262C7.57034 15.0167 7.57034 15.6499 7.96086 16.0404C8.35139 16.431 8.98455 16.431 9.37508 16.0404L7.96086 14.6262ZM12.7084 12.7071C13.0989 12.3166 13.0989 11.6834 12.7084 11.2929C12.3179 10.9024 11.6847 10.9024 11.2942 11.2929L12.7084 12.7071ZM11.2942 11.2929C10.9037 11.6834 10.9037 12.3166 11.2942 12.7071C11.6847 13.0976 12.3179 13.0976 12.7084 12.7071L11.2942 11.2929ZM16.0417 9.37376C16.4323 8.98324 16.4323 8.35007 16.0417 7.95955C15.6512 7.56903 15.0181 7.56903 14.6275 7.95955L16.0417 9.37376ZM12.7084 11.2929C12.3179 10.9024 11.6847 10.9024 11.2942 11.2929C10.9037 11.6834 10.9037 12.3166 11.2942 12.7071L12.7084 11.2929ZM14.6275 16.0404C15.0181 16.431 15.6512 16.431 16.0417 16.0404C16.4323 15.6499 16.4323 15.0167 16.0417 14.6262L14.6275 16.0404ZM11.2942 12.7071C11.6847 13.0976 12.3179 13.0976 12.7084 12.7071C13.0989 12.3166 13.0989 11.6834 12.7084 11.2929L11.2942 12.7071ZM9.37508 7.95955C8.98455 7.56903 8.35139 7.56903 7.96086 7.95955C7.57034 8.35007 7.57034 8.98324 7.96086 9.37376L9.37508 7.95955ZM9.37508 16.0404L12.7084 12.7071L11.2942 11.2929L7.96086 14.6262L9.37508 16.0404ZM12.7084 12.7071L16.0417 9.37376L14.6275 7.95955L11.2942 11.2929L12.7084 12.7071ZM11.2942 12.7071L14.6275 16.0404L16.0417 14.6262L12.7084 11.2929L11.2942 12.7071ZM12.7084 11.2929L9.37508 7.95955L7.96086 9.37376L11.2942 12.7071L12.7084 11.2929Z"
+                              fill="#E2E4EB"
+                            />
+                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#E2E4EB" stroke-width="2" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__table-row">
+                    <div class="basket__table-image-wrapper">
+                      <img src="https://avatars.mds.yandex.net/i?id=e76670f6ec3c795a2d61f0711d65cb39-5484758-images-thumbs&n=13" alt="image" title="image" class="basket__table-image" />
+                    </div>
+                    <div class="basket__table-row-description">
+                      <p class="basket__product-name">Букет из 15 белых роз 35-40 см (Кения) в стильной упаковке</p>
+                      <p class="basket__product-art">
+                        <span class="basket__product-art-title">Артикул: </span>
+                        <span class="basket__product-art-value"> 0092S40240</span>
+                      </p>
+                    </div>
+                    <div class="basket__table-row-controls">
+                      <div class="counter">
+                        <button class="counter__button" data-id="minus">
+                          <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 1H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                        <span class="counter__value">25</span>
+                        <button class="counter__button" data-id="plus">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 1V13" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13 7H1" stroke="#7D818E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="basket__table-row-price">
+                        <span class="basket__table-row-price-value">5 060 </span>
+                        <span class="basket__table-row-price-currency">₽</span>
+                      </div>
+
+                      <div class="basket__table-row-delete">
+                        <button class="basket__table-row-delete-button">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M7.96086 14.6262C7.57034 15.0167 7.57034 15.6499 7.96086 16.0404C8.35139 16.431 8.98455 16.431 9.37508 16.0404L7.96086 14.6262ZM12.7084 12.7071C13.0989 12.3166 13.0989 11.6834 12.7084 11.2929C12.3179 10.9024 11.6847 10.9024 11.2942 11.2929L12.7084 12.7071ZM11.2942 11.2929C10.9037 11.6834 10.9037 12.3166 11.2942 12.7071C11.6847 13.0976 12.3179 13.0976 12.7084 12.7071L11.2942 11.2929ZM16.0417 9.37376C16.4323 8.98324 16.4323 8.35007 16.0417 7.95955C15.6512 7.56903 15.0181 7.56903 14.6275 7.95955L16.0417 9.37376ZM12.7084 11.2929C12.3179 10.9024 11.6847 10.9024 11.2942 11.2929C10.9037 11.6834 10.9037 12.3166 11.2942 12.7071L12.7084 11.2929ZM14.6275 16.0404C15.0181 16.431 15.6512 16.431 16.0417 16.0404C16.4323 15.6499 16.4323 15.0167 16.0417 14.6262L14.6275 16.0404ZM11.2942 12.7071C11.6847 13.0976 12.3179 13.0976 12.7084 12.7071C13.0989 12.3166 13.0989 11.6834 12.7084 11.2929L11.2942 12.7071ZM9.37508 7.95955C8.98455 7.56903 8.35139 7.56903 7.96086 7.95955C7.57034 8.35007 7.57034 8.98324 7.96086 9.37376L9.37508 7.95955ZM9.37508 16.0404L12.7084 12.7071L11.2942 11.2929L7.96086 14.6262L9.37508 16.0404ZM12.7084 12.7071L16.0417 9.37376L14.6275 7.95955L11.2942 11.2929L12.7084 12.7071ZM11.2942 12.7071L14.6275 16.0404L16.0417 14.6262L12.7084 11.2929L11.2942 12.7071ZM12.7084 11.2929L9.37508 7.95955L7.96086 9.37376L11.2942 12.7071L12.7084 11.2929Z"
+                              fill="#E2E4EB"
+                            />
+                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#E2E4EB" stroke-width="2" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  // TEST ROW -->
+                </div>
+              </div>
+
+              <div class="basket__left-bar">
+                <div class="basket__order-row">
+                  <div class="basket__order-total-item">
+                    <div class="basket__order-total-text">Итого:</div>
+                    <div class="basket__order-total-price">
+                      <span class="basket__order-total-value">17 786 </span>
+                      <span class="basket__order-total-currency">₽</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket__order-row">
+                  <div class="basket__order-item">
+                    <div class="basket__order-item-service">
+                      <span class="basket__order-item-count">4 </span>
+                      <span class="basket__order-item-text">товара</span>
+                    </div>
+                    <div class="basket__order-item-value">
+                      <span class="basket__order-item-cost">17 786 </span>
+                      <span class="basket__order-item-currency">₽</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket__order-row">
+                  <div class="basket__order-item">
+                    <div class="basket__order-item-service">Доставка</div>
+                    <div class="basket__order-item-value">Бесплатно</div>
+                  </div>
+                </div>
+
+                <button class="basket__button">Оформить заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  КОРЗИНА -->
+        <!--  // КОРЗИНА -->
       </div>
     </div>
     <footer class="footer"></footer>
