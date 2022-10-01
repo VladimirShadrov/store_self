@@ -42,6 +42,7 @@
     line-height: 22px;
     color: $titleColor;
     font-weight: bold;
+    margin-bottom: 12px;
   }
 
   &__description-text {
@@ -69,5 +70,42 @@
   &__bue-container {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .product__content {
+    flex-wrap: wrap;
+  }
+
+  .product__left-bar,
+  .product__right-bar {
+    width: 100%;
+  }
+
+  .product__left-bar {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .product__price {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .product__title {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .product__description-text {
+    margin: 4px 0;
+  }
+
+  .product__description-text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }

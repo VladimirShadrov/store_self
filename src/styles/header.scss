@@ -51,14 +51,15 @@
 
   &__counter {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     text-align: center;
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: -8px;
+    right: -10px;
     border-radius: 50%;
     font-size: 14px;
+    line-height: 24px;
     background: rgba(226, 25, 91, 1);
     color: rgba(255, 255, 255, 1);
   }
@@ -128,6 +129,39 @@
     &__wrapper-mobile {
       display: block;
     }
+  }
+}
+
+@media (max-width: 450px) {
+  .header__logo {
+    font-size: 16px;
+  }
+
+  .header__counter {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    top: -8px;
+    right: -10px;
+  }
+
+  .header__favorite {
+    margin-right: 10px;
+  }
+
+  .header__bascket,
+  .header__favorite {
+    padding: 6px;
+
+    & > svg {
+      transform: scale(0.9);
+    }
+  }
+
+  .header__price {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
