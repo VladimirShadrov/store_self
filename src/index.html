@@ -7,6 +7,7 @@
     <title>Амуниция супергероя</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="header__wrapper-desc">
         <div class="container">
@@ -78,10 +79,13 @@
 
       </div>
     </header>
+    <!-- HEADER -->
+
+    
     <div class="content">
       <div class="container">
         <!-- КАТАЛОГ -->
-        <div class="catalog">
+        <div class="catalog" style="display: none;">
           <div class="catalog__title-wrapper">
             <h2 class="catalog__title">Экипировка для супергероя</h2>
           </div>
@@ -270,7 +274,21 @@
             <!--  // TEST -->
           </div>
         </div>
-        <!-- КАТАЛОГ -->
+        <!-- // КАТАЛОГ -->
+
+        <!-- КАРТОЧКА ТОВАРА-->
+        <div class="product">
+          <div class="crumbs__wrapper">
+            <a href="#" class="crumbs__item" data-id="main">Главная</a>
+            <a href="#" class="crumbs__item crumbs__item-active" data-id="active">Название супергероя</a>
+          </div>
+          <div class="product__content">
+            <div class="product__left-bar"></div>
+            <div class="product__right-bar"></div>
+          </div>
+        </div>
+        <!-- // КАРТОЧКА ТОВАРА-->
+
       </div>
     </div>
     <footer class="footer"></footer>
