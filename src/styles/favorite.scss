@@ -1,0 +1,23 @@
+@import 'wars';
+
+.favorite {
+  padding-bottom: 30px;
+
+  &__title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+
+  &__title-empty {
+    text-align: center;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .favorite__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
