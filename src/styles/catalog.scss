@@ -25,10 +25,37 @@
     margin: 15px;
     padding: 16px;
     transition: 0.3s;
+    position: relative;
 
     &:hover {
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.12), 0 4px 30px rgba(19, 15, 38, 0.1);
       border-radius: 6px;
+    }
+  }
+
+  &__card-favorite-btn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+    & > svg > path {
+      fill: none;
+      stroke: rgb(226, 25, 91);
+      stroke-width: 0.7;
+    }
+  }
+
+  &__card-favorite-btn-active {
+    & > svg > path {
+      fill: white;
+      stroke: white;
     }
   }
 
