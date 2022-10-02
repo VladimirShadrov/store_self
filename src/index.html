@@ -84,7 +84,7 @@
     <div class="content">
       <div class="container">
         <!-- КАТАЛОГ -->
-        <div class="catalog" style="display: none">
+        <div class="catalog">
           <div class="catalog__title-wrapper">
             <h2 class="catalog__title">Экипировка для супергероя</h2>
           </div>
@@ -276,7 +276,7 @@
         <!-- // КАТАЛОГ -->
 
         <!-- КАРТОЧКА ТОВАРА-->
-        <div class="product" style="display: none">
+        <div class="product">
           <div class="crumbs__wrapper">
             <a href="#" class="crumbs__item" data-id="main">Главная</a>
             <a href="#" class="crumbs__item crumbs__item-active" data-id="active">Название супергероя</a>
@@ -338,6 +338,8 @@
           </div>
         </div>
         <!-- // КАРТОЧКА ТОВАРА-->
+
+        <!--  КОРЗИНА -->
         <div class="basket">
           <div class="crumbs__wrapper">
             <a href="#" class="crumbs__item" data-id="main">Главная</a>
@@ -590,11 +592,66 @@
             </div>
           </div>
         </div>
-
-        <!--  КОРЗИНА -->
         <!--  // КОРЗИНА -->
       </div>
     </div>
     <footer class="footer"></footer>
+
+    <!-- УВЕДОМЛЕНИЕ О ДОБАВЛЕНИИ В КОРЗИНУ-->
+    <div class="message">
+      <div class="message__title">
+        <p class="message__title-text">Добавлено в корзину</p>
+        <button class="message__close">
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.72959 1.57572L5.30563 3.99992L7.72959 6.42402C8.09014 6.78471 8.09014 7.36897 7.72959 7.72966C7.54944 7.90981 7.31325 7.99996 7.07718 7.99996C6.84071 7.99996 6.6045 7.90995 6.42449 7.72966L4.00001 5.30529L1.57571 7.72964C1.39559 7.90979 1.15938 7.99993 0.923098 7.99993C0.686888 7.99993 0.450838 7.90993 0.270551 7.72964C-0.09 7.36911 -0.09 6.78482 0.270551 6.424L2.69444 3.9999L0.270413 1.57572C-0.0901378 1.21516 -0.0901378 0.630758 0.270413 0.270207C0.630895 -0.090069 1.21496 -0.090069 1.57558 0.270207L3.99999 2.69442L6.42422 0.270207C6.78491 -0.090069 7.36904 -0.090069 7.72945 0.270207C8.09014 0.630758 8.09014 1.21516 7.72959 1.57572Z"
+              fill="#858FA4"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="message__content">
+        <div class="message__row">
+          <div class="message__row-title">Вертикальный Велотренажер СardioPower B37</div>
+          <div class="message__row-count">
+            <span class="message__row-value">68 </span>
+            <span class="message__row-text">шт.</span>
+          </div>
+        </div>
+
+        <!-- TEST ROW-->
+        <div class="message__row">
+          <div class="message__row-title">Вертикальный Велотренажер СardioPower B37</div>
+          <div class="message__row-count">
+            <span class="message__row-value">68 </span>
+            <span class="message__row-text">шт.</span>
+          </div>
+        </div>
+        <div class="message__row">
+          <div class="message__row-title">Вертикальный Велотренажер СardioPower B37</div>
+          <div class="message__row-count">
+            <span class="message__row-value">68 </span>
+            <span class="message__row-text">шт.</span>
+          </div>
+        </div>
+        <div class="message__row">
+          <div class="message__row-title">Вертикальный Велотренажер СardioPower B37</div>
+          <div class="message__row-count">
+            <span class="message__row-value">68 </span>
+            <span class="messagtext">шт.</span>
+          </div>
+        </div>
+        <!-- //TEST ROW-->
+      </div>
+      <div class="message__actions">
+        <button class="button button__order" style="padding: 10px; width: 150px">Оформить заказ</button>
+        <div class="message__total">
+          <span class="message__total-title">Итого:</span>
+          <span class="message__total-value">39 500</span>
+          <span class="message__total-currency">₽</span>
+        </div>
+      </div>
+    </div>
+    <!-- // УВЕДЛМЛЕНИЕ О ДОБАВЛЕНИИ В КОРЗИНУ-->
   </body>
 </html>

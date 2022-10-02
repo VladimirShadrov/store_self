@@ -25,4 +25,15 @@
     top: calc(50% - 10px);
     left: 15px;
   }
+
+  &__order {
+    width: 150px;
+    padding: 10px;
+    background: $orderBtnBg;
+    transition: 0.3s;
+
+    &:hover {
+      background: $orderBtnHoverBg;
+    }
+  }
 }
