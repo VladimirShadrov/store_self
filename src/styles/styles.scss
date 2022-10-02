@@ -1,16 +1,16 @@
-// @use 'wars';
-@use 'normalize';
-@use 'header';
-@use 'content';
-@use 'catalog';
-@use 'buttons';
-@use 'product-card';
-@use 'bread-crumbs';
-@use 'counter';
-@use 'basket';
-@use 'addToBasketMsg';
-@use 'favorite';
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kumbh+Sans:wght@400;700&family=PT+Serif:wght@700&display=swap');
+@import 'normalize';
+@import 'header';
+@import 'content';
+@import 'catalog';
+@import 'buttons';
+@import 'product-card';
+@import 'bread-crumbs';
+@import 'counter';
+@import 'basket';
+@import 'addToBasketMsg';
+@import 'favorite';
+@import 'loader';
 @import 'wars';
 
 * {
