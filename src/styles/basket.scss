@@ -62,6 +62,8 @@
     }
 
     &:hover {
+      background: $basketRowBg;
+
       & > .basket__table-row-options > .basket__table-row-description > .basket__product-name {
         color: $titleHoverColor;
       }
